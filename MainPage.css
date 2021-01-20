@@ -1,0 +1,117 @@
+#slideshow {
+    position: relative;
+    height: 800px;
+    overflow: hidden;
+}
+
+
+#carouselText {
+    z-index: 1;
+    margin-top: 300px;
+    position: absolute;
+    font-size: 60px;
+    width: 400px;
+    word-wrap: normal;
+    margin-left: 200px;
+    color:ivory;
+    text-shadow: 2px 2px 2px black;
+    font-family: 'Segoe UI', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif';
+}
+
+.left span {
+    margin-top: 500px;
+    font-size: 70px;
+    opacity: 60%;
+}
+
+.right span {
+    margin-top: 500px;
+    font-size: 70px;
+    opacity: 60%;
+}
+
+.row1, .row2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 51px;
+    background-color: ivory;
+   
+}
+
+.row2 {
+    padding-bottom: 50px;
+}
+
+.theService {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+}
+
+.theService p {
+    text-align: center;
+}
+
+
+.imageContainer {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.row1 img, .row2 img{
+    height: 200px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.imageContainer1, .imageContainer2, .imageContainer3, .imageContainer4, .imageContainer5, .imageContainer6{
+    position: relative;
+    width: 200px;
+}
+
+.ServiceLearnMoreButton {
+    transition: .5s ease;
+  opacity: 0%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  border: none;
+}
+
+.imageContainer1:hover img, .imageContainer2:hover img, .imageContainer3:hover img , .imageContainer3:hover img , .imageContainer4:hover img , .imageContainer5:hover img, .imageContainer6:hover img   {
+    opacity: 30%;
+}
+
+.imageContainer1:hover .ServiceLearnMoreButton, .imageContainer2:hover .ServiceLearnMoreButton, .imageContainer3:hover .ServiceLearnMoreButton{
+    opacity: 100%;
+}
+
+
+.imageContainer4:hover .ServiceLearnMoreButton, .imageContainer5:hover .ServiceLearnMoreButton, .imageContainer6:hover .ServiceLearnMoreButton{
+    opacity: 100%;
+}
+
+
+#ServiceMore {
+    height: 40px;
+    width: 10%;
+    border: none;
+    font-size: 22px;
+    background-color: mediumaquamarine;
+    margin-left: 45%;
+    margin-left: 45%;
+    border-radius: 20px;
+    box-shadow: 0px 4px 0px rgb(230, 230, 230);
+    background-image: linear-gradient(rgb(176, 236, 218), mediumaquamarine);
+
+}

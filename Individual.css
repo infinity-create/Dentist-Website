@@ -1,0 +1,674 @@
+
+/* ..............................................................................MainMenu*/
+
+
+#slideshow {
+    position: relative;
+    height: 800px;
+    overflow: hidden;
+}
+
+
+#carouselText {
+    z-index: 1;
+    margin-top: 300px;
+    position: absolute;
+    font-size: 60px;
+    width: 400px;
+    word-wrap: normal;
+    margin-left: 200px;
+    color:ivory;
+    text-shadow: 2px 2px 2px black;
+    font-family: 'Segoe UI', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif';
+}
+
+.left span {
+    margin-top: 500px;
+    font-size: 70px;
+    opacity: 60%;
+}
+
+.right span {
+    margin-top: 500px;
+    font-size: 70px;
+    opacity: 60%;
+}
+
+.row1, .row2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 51px;
+    background-color: ivory;
+   
+}
+
+.row2 {
+    padding-bottom: 50px;
+}
+
+.theService {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+}
+
+.theService p {
+    text-align: center;
+}
+
+
+.imageContainer {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.row1 img, .row2 img{
+    height: 200px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.imageContainer1, .imageContainer2, .imageContainer3, .imageContainer4, .imageContainer5, .imageContainer6{
+    position: relative;
+    width: 200px;
+}
+
+
+.ServiceLearnMoreButton {
+    transition: .5s ease;
+  opacity: 0%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  border: none;
+}
+
+.imageContainer1:hover img, .imageContainer2:hover img, .imageContainer3:hover img , .imageContainer3:hover img , .imageContainer4:hover img , .imageContainer5:hover img, .imageContainer6:hover img   {
+    opacity: 30%;
+}
+
+.imageContainer1:hover .ServiceLearnMoreButton, .imageContainer2:hover .ServiceLearnMoreButton, .imageContainer3:hover .ServiceLearnMoreButton{
+    opacity: 100%;
+}
+
+
+.imageContainer4:hover .ServiceLearnMoreButton, .imageContainer5:hover .ServiceLearnMoreButton, .imageContainer6:hover .ServiceLearnMoreButton{
+    opacity: 100%;
+}
+
+
+#ServiceMore {
+    height: 40px;
+    width: 10%;
+    border: none;
+    font-size: 22px;
+    background-color: mediumaquamarine;
+    margin-left: 45%;
+    margin-left: 45%;
+    border-radius: 20px;
+    box-shadow: 0px 4px 0px rgb(230, 230, 230);
+    
+}
+
+
+/* .........................................................................AboutPage*/
+
+
+.Intro {
+    display: flex;
+    justify-content: center;
+}
+
+.pageHeading {
+    font-size: 50px;
+    color: mediumaquamarine;
+    padding-bottom: 90px;
+    padding-top: 90px;
+}
+
+.aboutIntro {
+    width: 800px;
+    text-align: justify;
+    padding-left: 70px;
+    font-size: 20px;
+}
+
+.pageIntro {
+    display: flex;
+    flex-direction: row;
+    height: 380px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    box-shadow: 0px 20px goldenrod;
+}
+
+
+#AboutSlides {
+    height: 380px;
+    width: 380px;
+    overflow: hidden;
+}
+
+.left span {
+    margin-top: 150px;
+    font-size: 40px;
+    opacity: 60%;
+}
+
+.right span {
+    margin-top: 150px;
+    font-size: 40px;
+    opacity: 60%;
+}
+
+.carousel-indicators li {
+    margin-top: 200px;
+    background-color: mediumaquamarine;
+}
+
+.carousel-inner img{
+    width: 500px;
+    height: 500px;
+}
+
+
+#valueHeading {
+    color: mediumaquamarine;
+    font-size: 40px;
+    padding-top: 150px;
+    padding-bottom: 50px;
+}
+
+.values {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: ivory;
+    box-shadow: 5px 5px rgb(239, 241, 238);
+    padding: 20px 20px 20px 20px;
+}
+.values img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.value {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.valueParag {
+    width: 200px;
+    text-align: justify;
+    font-size: 19px;
+}
+
+.valueTitle {
+    color: goldenrod;
+}
+
+.Team img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.row01, .row02{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+    padding-bottom: 80px;
+    padding-top: 10px;
+}
+
+.dentist {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(236, 236, 236);
+    padding: 20px 20px 20px 20px;
+    box-shadow: 5px 0px rgb(238, 205, 120);
+
+}
+
+.teamParag {
+    text-align: justify;
+    width: 300px;
+    font-size: 19px;
+
+}
+
+.Member {
+    color: goldenrod;
+}
+
+/* .........................................................................ServicesPage*/
+
+
+
+.ServiceList {
+    padding-top: 200px;
+}
+.row01, .row02, .row03 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 90px;
+}
+
+
+.imgContnr{
+    position: relative;
+    width: 200px;
+}
+
+.dentalService {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(167, 167, 167);
+    box-shadow: 0px 10px goldenrod;
+    padding: 30px 30px 30px 30px;
+
+}
+
+.dentalService p {
+    width: 500px;
+    text-align: justify;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.dentalService a{
+    font-size: 30px;
+    color: ivory;
+}
+
+.dentalService img{
+    height: 200px;
+}
+
+.ServiceLearnMoreButtons {
+    font-size: 20px;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+}
+
+/* .........................................................................InformationPage*/
+
+/* Information Section!!!!!!!!!!!! */
+
+.InformationContainer {
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+}
+
+.DataContainer {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.DataContainer img{
+    width: 620px;
+}
+
+.TextContainer1, .TextContainer2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.TextContainer1 {
+    padding-right: 40px;
+}
+
+.TextContainer2 {
+    padding-left: 40px;
+}
+
+.InfoText {
+    text-align: justify;
+    font-size: 20px;
+}
+
+.InfoHeading2 {
+    text-align: right;
+}
+
+.InfoHeading1, .InfoHeading2 {
+    color: rgb(82, 82, 82);
+}
+.divide02 {
+    width: 50px;
+    background-color: mediumaquamarine;
+}
+
+.DividingLine {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 20px;
+    background-color: goldenrod;
+}
+.infoDividingLine{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 20px;
+    background-color: goldenrod;
+}
+
+
+#moreFAQ {
+    width: 100px;
+    height: 50px;
+    background-color: mediumaquamarine;
+    border: none;
+    border-radius: 20px;
+    background-image: linear-gradient(rgb(176, 236, 218), mediumaquamarine);
+    font-size: 20px;
+
+    
+}
+
+.faqMore{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.faqMore div{
+    padding-top: 50px;
+}
+
+
+
+/* .........................................................................ContactPage*/
+
+
+.ContactTitle {
+    text-align: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    color: mediumaquamarine;
+
+    padding-bottom: 90px;
+    padding-top: 90px;
+}
+
+#ContactHeading {
+    font-size: 40px;
+}
+
+#ScheduleHeading{
+    font-size: 50px;
+}
+
+
+.FormsContainer {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    justify-content: space-between;
+}
+
+.FormsContainer button {
+    border: none;
+    font-size: 20px;
+    width: 49%;
+}
+
+.tabcontent label {
+    font-size: 18px;
+}
+
+
+#defaultOpen.active {
+    background-color: rgb(216, 177, 78);
+    border-style: solid solid none solid;
+    border-color: goldenrod;
+    border-width: medium;
+    font-weight: bold;
+}
+
+#otherOpen.active {
+    background-color:  rgb(41, 175, 131);
+    border-style: solid solid none solid;
+    border-color: mediumaquamarine;
+    border-width: medium;
+    font-weight: bold;
+}
+
+.FormsContainer button:hover {
+    background-color:rgb(151, 148, 148);
+}
+
+.tabcontent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+
+}
+
+.tabcontent form{
+    width: 50%;
+}
+
+.scheduleImage{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    padding-right: 5px;
+}
+
+#book {
+    height: 770px;
+}
+
+#write {
+    height: 700px;
+    margin-left: 10px;
+    border: 2px solid rgb(136, 231, 199);
+}
+
+.tabcontent input, .tabcontent textarea{
+    font-size: 18px;
+    border-color: gold;
+}
+
+
+.ones {
+    display: flex;
+    flex-direction: row;
+    padding: 20px 20px 20px 20px;
+}
+
+.righties {
+    padding-left: 50px;
+}
+
+.twos {
+    padding: 20px 20px 20px 20px;
+}
+
+.three {
+    padding: 20px 20px 20px 20px;
+}
+
+.four {
+    padding: 20px 20px 20px 20px;
+}
+
+#submitApp {
+    font-size: 22px;
+    border-radius: 10px;
+    border-color: navajowhite;
+    background-image: linear-gradient( rgb(209, 208, 208), rgb(180, 179, 179));
+
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+
+}
+
+#scheduleApp {
+    background-color: rgb(216, 177, 78);
+    border-style: none solid solid solid;
+    border-color: goldenrod;
+    border-width: medium;
+}
+
+#sendMessage {
+    background-color:  rgb(41, 175, 131);
+    border-style: none solid solid solid;
+    border-color: rgb(86, 209, 168);
+    border-width: medium;
+}
+
+.red{
+    color: red;
+}
+/* 
+#msg {
+    margin-left: 550px;
+} */
+
+/* #schd {
+    margin-right: 550px;
+} */
+
+/* .........................................................................FullServicePage*/
+
+
+.ServiceDesc {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: ivory;
+
+}
+
+.ServiceDesc h1{
+    padding-top: 5px;
+}
+
+#textt {
+    width: 90%;
+    margin-left: 5%;
+    font-size: 20px;
+    text-align: justify;
+    padding-top: 40px;
+}
+
+#bookApp{
+    font-size: 30px;
+    width: 500px;
+    height: 100px;
+    border: none;
+    background-color: mediumaquamarine;
+    border-radius: 50px;
+    background-image: linear-gradient(rgb(128, 233, 201), rgb(85, 155, 132));
+
+}
+
+.bigButton {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 20px goldenrod;
+}
+
+
+
+/*............................................................................................FAQPage*/
+
+.title{
+    padding-bottom: 100px;
+}
+.titleContainer {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    box-shadow: 0px 20px  goldenrod;
+
+}
+
+.titleImage {
+    height: 800px   ;
+}
+
+.textData p, .textData dl{
+    font-size: 20px;
+}
+
+#Aboutus {
+    font-size: 20px;
+    width: 150px;
+    height: 50px;
+    border: none;
+    background-color: mediumaquamarine;
+    float: right;
+    border-radius: 20px;
+    background-image: linear-gradient(rgb(176, 236, 218), mediumaquamarine);
+
+}
+
+.textData {
+    padding-left: 20px;
+}
+
+.txtContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
